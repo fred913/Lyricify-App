@@ -9,6 +9,7 @@
 如果您是 Lyricify 4 的老用户，遇到了一些问题，则可以在下方查找是否有您想知道的问题。  
 
 ### 功能
+- [Microsoft Store 版本与 GitHub 版本有什么区别](#microsoft-store-%E7%89%88%E6%9C%AC%E4%B8%8E-github-%E7%89%88%E6%9C%AC%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB)
 - [Spotify Premium 在 Lyricify 中的独占功能](#spotify-premium-%E7%8B%AC%E5%8D%A0%E5%8A%9F%E8%83%BD)
 - [歌词导入](#%E6%AD%8C%E8%AF%8D%E6%A0%87%E8%AE%B0%E5%8F%8A%E5%AF%BC%E5%85%A5)
 - [歌词管理及高级操作](#%E6%9B%B2%E7%9B%AE%E7%AE%A1%E7%90%86)
@@ -32,6 +33,8 @@
 Lyricify 4 是免费软件，如果你觉得 Lyricify 4 做的不错，则可以通过以下渠道支持：
 - 在软件中，菜单-关于页里有打赏方式
 - 在 [Microsoft Store](https://apps.microsoft.com/store/detail/9P4WB75RHWCH?launch=true&mode=full) 中购买
+
+如果您在 Microsoft Store 购买过程中遇到困难，可以考虑通过打赏的方式支持 Lyricify。  
 
 如果你发现有人在非法销售本软件 (只有 Microsoft Store 中的 Lyricify 是官方发布)，请联系我们！感谢你的支持！  
 
@@ -178,7 +181,7 @@ Lyricify 4 支持全局快捷键，且支持自定义。
 ## 设置
 
 ### 字体
-Lyricify 4 有着强大的自定义字体功能，您可以为 `歌词` 界面、`Lyricify 全屏` 界面、`桌面歌词` 设置自定义字体。
+Lyricify 4 有着强大的自定义字体功能，您可以为 `歌词` 界面、`Apple Music 歌词` 界面、`灵动词岛`、`桌面歌词`、`Lyricify 全屏` 界面 设置自定义字体。
 如果您想要自定义字体，则可以通过以下步骤实现：
 1. 设置中找到对应界面的 `字体家族` 设置，点击 `自定义` 按钮。
 2. 这时会打开 `字体选择工具` 窗口，左侧为已安装字体列表，右侧为自定义字体列表。
@@ -244,6 +247,52 @@ Lyricify 4 有着强大的自定义字体功能，您可以为 `歌词` 界面�
 2. 中文歌词必须使用简体中文！若上传繁体中文歌词，你的账户将有几率会被限制。  
 3. 上文中的“QQ 音乐、网易云音乐均无歌词”指：QQ 音乐和网易云音乐上均没有对应曲目或对应曲目无歌词。通过 Lyricify 上的搜索按钮没有搜到对应歌词不代表真的没有，需要手动去 QQ 音乐和网易云音乐的 App 内查找，确保没有对应歌词后才可认为“均无歌词”。  
 4. QQ 音乐、网易云音乐有歌词但均无翻译不算作“均无歌词”，这种情况下上传歌词和翻译到 Lyricify 歌词库仍算作违规。您可以到网易云音乐提交翻译，等待过审后 Lyricify 会自动拉取翻译。
+
+### 添加翻译
+在添加非中文歌词后，需要手动添加中文翻译。  
+点击 `高级歌词编辑器` 窗口右上角的 `添加翻译` 按钮，即可自动添加时间轴，在这之后，您可以手动输入中文翻译。  
+  
+**这里再提供一种更容易的翻译导入方式：**  
+导入歌词后，可以先将翻译以以下格式复制到剪切板中，再点击 `添加翻译` 按钮，这时 Lyricify 会自动匹配翻译行。
+如，歌词原文为：
+```
+Lately, I've been, I've been losing sleep
+Dreaming about the things that we could be
+Oh
+But baby, I've been, I've been praying hard
+Said no more counting dollars
+```
+翻译为
+```
+最近我总是辗转反侧 难以入眠
+对我们可能的未来 浮想联翩
+
+但亲爱的 我一直在努力祈祷
+不再财迷心窍
+```
+这时，可以将以下内容复制到剪切板：
+```
+Lately, I've been, I've been losing sleep
+最近我总是辗转反侧 难以入眠
+Dreaming about the things that we could be
+对我们可能的未来 浮想联翩
+Oh
+
+But baby, I've been, I've been praying hard
+但亲爱的 我一直在努力祈祷
+Said no more counting dollars
+不再财迷心窍
+```
+也可以只包含翻译：
+```
+最近我总是辗转反侧 难以入眠
+对我们可能的未来 浮想联翩
+
+但亲爱的 我一直在努力祈祷
+不再财迷心窍
+```
+注意，第三行歌词的翻译为空，此时一定要保留空行，不然会导致翻译与歌词错位。  
+此外，还需要注意翻译行数与歌词原文的行数一致。
 
 ## 可用性查询
 在 Lyricify 4 中，您可以很方便的检查专辑、歌单、已点赞的歌曲在不同地区的可用性。  
@@ -321,17 +370,33 @@ Lyricify 4 支持内置播放，但是并不建议使用。这只是一个测试
 1. 在 `Windows 资源管理器` 的地址栏中输入 `%AppData%\Microsoft\Windows\Start Menu\Programs\Startup`，按 `Enter` 键。
 2. 将 Lyricify 快捷方式复制到此文件夹中即可。
 
-## Apple Music 歌词流畅度优化
-Apple Music 歌词界面 CJK (中日韩) 歌词流畅度较低，这是微软的锅。  
-*本优化对于灵动词岛的卡顿问题也有作用。*  
-在这里，Lyricify 提供了优化方案。  
-**注意：** Lyricify 4.0.9 或更高版本中会自动执行本优化，无需用户手动执行。(微软商店版本因权限和重定向问题，无法实现自动安装，需手动优化)  
-**方法：**  
-1. 下载 [PingFang SC for Lyricify.7z](https://github.com/WXRIW/Lyricify-App/raw/main/resources/font/PingFang%20SC%20for%20Lyricify.7z)。
-2. 将这个压缩包里的字体安装到系统中（解压后右击字体，点击安装即可）。
-3. 重启 Lyricify。
-
 # 常见问题
+
+## Microsoft Store 版本与 GitHub 版本有什么区别
+*注：下文中的 GitHub 版本指 Microsoft Store 版本外的其他分发方式分发的版本，含群聊、网盘等分发渠道。*
+### 主要区别
+1. 发布新版本时，Microsoft Store 版本通常会提前 1-3 天更新，您可以提前体验新功能。
+2. Microsoft Store 版本的自动更新由 Microsoft 负责和管理，体验更好。
+   GitHub 版本的更新由 Lyricify 负责，更新源为 GitHub 服务器，在部分地区体验不如 Microsoft Store 版本。
+3. 已购买的 Microsoft Store 版本在启动时会有特殊欢迎提示。
+4. 部分功能为 Microsoft Store 版本独享功能。
+
+### Microsoft Store 独享功能
+为了提升用户体验，促进开发良性循环，部分功能是作为 Microsoft Store 独享功能开发的。  
+目前 Microsoft Store 版本有以下独享功能：
+1. Apple Music 歌词的自定义字体功能。
+2. 灵动词岛的自定义字体功能。
+  
+在 Microsoft Store 购买 Lyricify 是对 Lyricify 开发者的一种支持和信任，感谢所有购买或打赏过 Lyricify 的用户！也欢迎各位用户给出 5 星好评和评语，这对我有很大帮助！  
+
+### 更多信息
+Lyricify 4 是免费软件，如果你觉得 Lyricify 4 做的不错，则可以通过以下渠道支持：
+- 在软件中，菜单-关于页里有打赏方式
+- 在 [Microsoft Store](https://apps.microsoft.com/store/detail/9P4WB75RHWCH?launch=true&mode=full) 中购买
+
+如果您在 Microsoft Store 购买过程中遇到困难，可以考虑通过打赏的方式支持 Lyricify。  
+
+如果你发现有人在非法销售本软件 (只有 Microsoft Store 中的 Lyricify 是官方发布)，请联系我们！感谢你的支持！
 
 ## 点击播放按钮没有反应
 打开 Lyricify 主界面，点击播放按钮，没开始播放，并提示 `需要 Premium`、`未找到可用设备，请开启你的 Spotify 客户端`、`429 错误，请稍后再试`。
@@ -348,15 +413,17 @@ Apple Music 歌词界面 CJK (中日韩) 歌词流畅度较低，这是微软的
 ### 导致原因
 网络连接状态不好，导致无法连接到 Spotify 服务器。与 Lyricify 无关。 
 ### 解决方案
-更换网络环境，如果你在使用代理，可尝试更换服务商。  
+更换网络环境，如果你在使用代理，可尝试更换节点或服务提供商。  
 请确保在你的网络下，这两个 Spotify 域名可以 Ping 连通：  
 ```
 accounts.spotify.com
 api.spotify.com
 ```
+如果可以连通，但仍然无法启动 Lyricify，请继续更换你的网络连接或服务提供商，直到可以连通为止。  
+Lyricify 可以保证的是，Lyricify 本身没有问题，这个问题是纯网络问题。
 
 ## 启动 Lyricify 后弹出消息框
-**注意：** 本问题仅在 4.2.11 或更早版本中出现。
+**注意：** 本问题仅在 4.2.11 或更早版本中出现。  
 打开 Lyricify 后弹出消息框，出现下列提示之一：
 - The SSL connection could not be established, see inner exception.
 - 由于目标计算机积极拒绝，无法连接。
@@ -374,6 +441,9 @@ api.spotify.com
 提示 `你的上传请求被拒绝`。
 ### 解决方案
 如果您是新用户，请等待 24 小时再上传。
+
+## Lyricify 账户被限制
+参考[本文](LyricifyAccount/README.zh-CN.md)。
 
 ## 打开 Lyricify 的同时打开 Spotify 功能不见了
 此功能在 Lyricify 3 中仅为测试功能，目前没有找到完美的实现方式，故 Lyricify 4 取消了该功能。  
@@ -504,12 +574,6 @@ Lyricify 为提升体验，需在歌曲开头以最小的影响进行时间轴�
 ~~重新打开 Lyricify。~~  
 使用 Lyricify 4.1 或更新版本的 64 位版本。
 
-## 灵动词岛没有 Lyricify 3 流畅
-### 导致原因
-`dynamicClass.IL_STUB_COMtoCLR` 占用高，未查明具体原因。
-### 解决方案
-暂无，您也可以尝试[这个优化](#apple-music-%E6%AD%8C%E8%AF%8D%E6%B5%81%E7%95%85%E5%BA%A6%E4%BC%98%E5%8C%96)，此优化对于灵动词岛也有效果。
-
 # 特殊问题
 
 ## 电脑无法科学上网，如何在手机上完成授权
@@ -543,7 +607,7 @@ Lyricify 4 专为 Spotify 设计，`Lyricify 4` 全称 `Lyricify for Spotify`。
 ### 功能
 | 名称 | 描述 |
 | - | - |
-| 灵动词岛 | 外观与“灵动岛”和刘海有关的用于显示歌词的悬浮窗口，“灵动岛”是不被 Lyricify 认同的说法 |
+| 灵动词岛 | 外观与“灵动岛”和刘海有关的用于显示歌词的悬浮窗口，“灵动岛”“灵动岛歌词” 等是不被 Lyricify 认同的说法 |
 | 桌面歌词 | 桌面歌词，“悬浮歌词”是不被 Lyricify 认同的说法 |
 
 ### Apple Music 歌词
@@ -561,4 +625,5 @@ Lyricify 4 专为 Spotify 设计，`Lyricify 4` 全称 `Lyricify for Spotify`。
 | 名称 | 描述 |
 | - | - |
 | 歌词 | 歌词，“字幕”是不被 Lyricify 认同的说法 |
-| Lyricify | Lyricify 的名称是 “Lyricify”，“ly”“Ly”“Lyr”“Lyricfy”等是不被 Lyricify 认同的说法 |
+| Lyricify | Lyricify 的名称是 “Lyricify”，“ly”“Ly”“Lyr”“Liricify”“Lyricfy” 等是不被 Lyricify 认同的说法 |
+| Lyricify 4 | Lyricify 4 的名称是 “Lyricify 4”，全称为 “Lyricify for Spotify”，“l4”“Ly4” 等是不被 Lyricify 认同的说法 |
